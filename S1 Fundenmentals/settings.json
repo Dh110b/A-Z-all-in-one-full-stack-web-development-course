@@ -1,0 +1,35 @@
+{
+  "settingsSync.ignoredSettings": [],
+  "editor.formatOnSave": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "postcss": "css",
+    "html": "html"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "settingsSync.ignoredExtensions": [],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "html-css-class-completion.CSSLanguages": ["css", "sass", "scss"],
+  "html-css-class-completion.enableEmmetSupport": true,
+  "html-css-class-completion.JavaScriptLanguages": [
+    "javascript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.wordWrap": "on",
+  "editor.fontSize": 21,
+  "debug.console.fontSize": 18,
+  "terminal.integrated.fontSize": 18,
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.allowedUNCHosts": ["wsl.localhost"],
+  "extensions.ignoreRecommendations": true,
+  "editor.fontLigatures": false
+}

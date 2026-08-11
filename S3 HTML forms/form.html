@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Form for user login -->
+    <form action="/login.html">
+        <!-- 
+        <form> tag is used to create an HTML form
+        form tag is used to collect user input and send it to a server for processing
+        The action attribute specifies the URL where the form data will be sent when the form is submitted.    
+        -->
+        <label for="username">Username:</label>
+        <!-- 
+        <lable> is used to define a label for an input element
+        The for attribute of the <label> tag should be the same as the id attribute of the input element to bind them together.
+        This association allows users to click on the label to focus on the corresponding input field, improving
+        accessibility and usability of the form. It also provides a clear indication of what information is expected in the input field.
+        -->
+        <input type="text" id="username" name="username" required>
+        <!--
+        <input> is used to define an input field where the user can enter data
+        The type attribute specifies the type of input field, such as text, password, email, etc.
+        The id attribute is used to uniquely identify the input field, which can be referenced by the <label> tag using the for attribute.
+        The name attribute is used to specify the name of the input field, which is sent to the server when the form is submitted.
+        The required attribute indicates that the input field must be filled out before submitting the form. 
+         -->
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required> 
+        <!-- type = password is used to hide the characters entered by the user for security reasons -->
+        <br>
+
+        <input type="submit" value="Submit">
+        <!-- type = submit is used to create a button that submits the form data to the server
+    </form>
+</body>
+</html>
+
+<!-- 
+In Inpute type = text is used to define a single-line text input field where the user can enter data.
+there are many types of input fields available in HTML, such as 
+    text, password, email, number, date, checkbox, radio button, etc. 
+    Each type serves a specific purpose and provides different functionalities for user input.
+
+text input fields are commonly used for collecting information such as names, addresses, and other textual data from users.
+
+password input fields are used for sensitive information, such as passwords, 
+    where the characters entered by the user are hidden for security reasons.
+
+email input fields are used for collecting email addresses from users, 
+    and they often include built-in validation to ensure that the entered value is in a valid email format.
+
+number input fields are used for collecting numeric data from users, 
+    and they often include features such as increment/decrement buttons and validation for numeric input.
+
+date input fields are used for collecting date values from users, 
+    and they often include a date picker interface for easy selection of dates.
+
+checkbox input fields are used for allowing users to select one or more options from a list of choices, 
+    and they can be checked or unchecked.
+
+radio button input fields are used for allowing users to select one option from a list of choices, 
+    and they are typically grouped together to ensure that only one option can be selected at a time
+
+submit input fields are used to create a button that submits the form data to the server when clicked.
+
+and many more input types are available in HTML to cater to different data collection needs and enhance user experience in web forms.
+-->
