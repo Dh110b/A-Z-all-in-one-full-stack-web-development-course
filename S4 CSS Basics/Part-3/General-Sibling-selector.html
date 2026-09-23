@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div ~ p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a paragraph.</p>
+        <section>
+            <p>This is a paragraph inside a section.</p>
+        </section>
+    </div>
+
+    <p>This is a paragraph inside another section outside div.</p>
+
+    <section>
+        <p>This is a paragraph inside another div.</p>
+    </section>
+    
+    <p>This is a paragraph inside another section outside div.</p>
+</body>
+</html>
+
+<!-- 
+In this File, we are using the general sibling selector to select the paragraph that is a sibling of a div element. 
+The CSS rule `div ~ p` targets any `<p>` element that comes after a `<div>` element, and applies the color red to it.
+
+Syntax:
+div ~ p {
+    color: red;
+}
+
+We used the general sibling selector to style the paragraph that is a sibling of the div element. 
+All paragraphs that come after the div are affected by this rule, regardless of their position relative to each other.
+
+This is a simple example of how to use the general sibling selector in CSS to style elements 
+based on their relationship in the HTML structure.
+
+This occurs in the HTML structure where the paragraph is a sibling of the div, and it comes after it.
+-->

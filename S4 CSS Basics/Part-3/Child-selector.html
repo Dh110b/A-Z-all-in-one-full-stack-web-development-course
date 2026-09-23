@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a paragraph.</p>
+        <section>
+            <p>This is a paragraph inside a section.</p>
+        </section>
+    </div>
+
+    <section>
+        <p>This is a paragraph inside another section outside div.</p>
+    </section>
+
+    <div>
+        <p>This is a paragraph inside another div.</p>
+    </div>
+</body>
+</html>
+
+<!-- 
+In this File, we are using a child selector to style only the <p> elements that are immediate children of <div> elements.
+The CSS rule "div > p { color: red; }" will apply the red color only to the <p> elements that are direct children of any <div> element.
+Child selectors are useful when you want to apply styles to elements that are directly nested within a specific parent element,
+but you don't want to affect any nested elements that are deeper in the hierarchy.
+
+Syntax for child selector is: parent > child { property: value; }
+We use the ">" symbol between the parent and child to indicate that 
+we are targeting only the immediate children of the parent element.
+
+For example, the <p> element inside the <section> that is nested within a <div> will not be styled with red color
+because it is not an immediate child of the <div>.
+This demonstrates the difference between child selectors and descendant selectors. 
+A child selector targets only the immediate children
+of a specified element, while a descendant selector targets all descendants, regardless of their depth in the DOM tree.
+-->

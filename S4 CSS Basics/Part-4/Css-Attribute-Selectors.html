@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Select elements with a specific attribute, in this case the class attribute */
+      p[class] {
+        color: red;
+      }
+
+      /* Select elements with a specific attribute and value */
+      a[href="https://www.supertastyburgers.com"]
+      {
+        color: green;
+      }
+
+      /* Select elements where an attribute contains a specific value that includes  whitespace separated values, notice tilde: */
+      li[class~="main-dish"] {
+        font-weight: bold;
+      }
+
+      /* Select elements with a specific attribute that starts with a certain value */
+      input[placeholder^="Email"] {
+        background-color: yellow;
+      }
+
+      /*Select elements with a specific attribute that ends with a specific value */
+      a[href$=".io"] {
+        color: red;
+      }
+
+      /* Select elements with a specific attribute that contains a certain value anywhere within it */
+      input[placeholder*="No"] {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="advert">We make the best burgers</p>
+    <div>Div without attribute</div>
+    <p class="advert">Super tasty burgers</p>
+
+    <a href="https://www.supertastyburgers.com">Go to tasty burgers website</a>
+
+    <ul>
+      <li class="burger main-dish">cheeseburger</li>
+      <li class="ice-cream dessert">Ice cream</li>
+    </ul>
+
+    <input type="text" placeholder="Email" />
+    <br />
+    <br />
+    <a href="https://www.supertastyicecream.io"
+      >Go to tasty ice cream website</a
+    >
+
+    <br />
+    <br />
+    <input type="text" placeholder="Phone No " />
+  </body>
+</html>
+
+
+<!-- 
+Attribute selectors are used to select elements with a specific attribute or attribute value.
+They allow you to target elements based on their attributes, making it easier to style specific elements in your HTML document.
+
+Syntax:
+selector[attribute] {
+    property: value;
+}
+
+selector[attribute="value"] {
+    property: value;
+}
+
+Examples:
+p[class] {
+    color: red;
+}
+div[id="container"] {
+    background-color: blue;
+}
+ul[class~="main-dish"] {
+    font-weight: bold;
+}
+text[placeholder^="Email"] {
+    background-color: yellow;
+}
+text[placeholder$="No"] {
+    background-color: brown;
+}
+
+
+There are several types of attribute selectors:
+1. [attribute] - Selects elements with the specified attribute, regardless of its value.
+2. [attribute="value"] - Selects elements with the specified attribute and value.
+3. [attribute~="value"] - Selects elements with the specified attribute and a value that contains a specified word (space-separated).
+4. [attribute|="value"] - Selects elements with the specified attribute and a value that starts with a specified word (followed by a hyphen).
+5. [attribute^="value"] - Selects elements with the specified attribute and a value that starts with a specified value.
+6. [attribute$="value"] - Selects elements with the specified attribute and a value that ends with a specified value.
+7. [attribute*="value"] - Selects elements with the specified attribute and a value that contains a specified value.
+
+They can be used to style elements based on their attributes, making it easier to target specific elements in your HTML document.
+-->

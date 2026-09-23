@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* The class defined last in the CSS has a higher priority */
+
+      .blue-color {
+        color: blue;
+      }
+      .red-color {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    The order declared in the class attribute has no effect on the priority of the CSS declarations.
+    The priority comes from the order of declarations in the CSS style. 
+    The class defined last in the CSS has a higher priority, and it will override the previous class declarations.
+    For example, in this example, we have two div elements with the same class names "blue-color" and "red-color",
+    but the order of the class names in the class attribute does not affect the priority of the CSS declarations. 
+    The class defined last in the CSS has a higher priority, and it will override the previous class declarations.
+    -->
+    <div class="blue-color red-color">This is a div element</div>
+    <div class="red-color blue-color">This is a div element</div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* when hovered, changes style */
+      .button:hover {
+        color: blue;
+      }
+      /*  when clicked ,changes style */
+      .button:active {
+        border: 1px solid red;
+      }
+      /* when focused, changes style */
+      .input-field:focus {
+        background-color: lightyellow;
+      }
+      /* if you clicked the link */
+      a:visited {
+        color: green;
+      }
+      /* Styles every second list item */
+      .food-list:nth-child(even) {
+        background-color: lightgreen;
+      }
+
+      /* Styles the first item  */
+      .products-list:first-child {
+        color: red;
+      }
+      /* Styles the last  item  */
+      .products-list:last-child {
+        color: pink;
+      }
+      /* Selects the second .products-list item */
+      .products-list:nth-child(2) {
+        font-size: 36px;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button">Login</button>
+    <br /><br />
+    <input class="input-field" type="text" placeholder="email" />
+    <br /><br />
+    <a href="https://google.com">google</a>
+    <br /><br />
+    <ul>
+      <li class="food-list">Chicken</li>
+      <li class="food-list">Beef</li>
+      <li class="food-list">Salad</li>
+      <li class="food-list">Soup</li>
+    </ul>
+    <br /><br />
+    <ul>
+      <li class="products-list">Phone</li>
+      <li class="products-list">PC</li>
+      <li class="products-list">Watch</li>
+      <li class="products-list">Keyboard</li>
+    </ul>
+  </body>
+</html>
+
+
+<!-- 
+Pseudo-class selectors are used to define the special state of an element.
+For example, we can use the :hover pseudo-class to change the color of a link when
+    the user hovers over it with the mouse.
+
+There is 4 main types of pseudo-class selectors:
+1. Dynamic pseudo-classes: These are used to define the state of an element based on
+    user interaction, such as :hover, :active, and :focus.
+2. Structural pseudo-classes: These are used to define the state of an element based on
+    its position in the document tree, such as :first-child, :last-child, and :nth-child().
+3. Negation pseudo-classes: These are used to define the state of an element based on
+    what it is not, such as :not().
+4. UI element states: These are used to define the state of an element based on its
+    user interface state, such as :enabled, :disabled, and :checked.
+
+Syntax:
+selector:pseudo-class {
+
+    property: value;
+}   
+
+In this file, we are using pseudo-class selectors to style elements based on their state or position in the document tree.
+and we have used the following pseudo-class selectors:
+1. :hover - to change the color of the button when hovered.
+2. :active - to change the border of the button when clicked.
+3. :focus - to change the background color of the input field when focused.
+4. :visited - to change the color of the link when it has been visited.
+5. :nth-child() - to style every second list item in the food list.
+6. :first-child - to style the first item in the products list.
+7. :last-child - to style the last item in the products list.
+8. :nth-child(2) - to style the second item in the products list.
+
+-->

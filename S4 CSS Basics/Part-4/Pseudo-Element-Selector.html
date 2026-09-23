@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*  insert content after an element */
+      .container::after {
+        content: " After";
+      }
+
+      /*  insert content before an element */
+      .container::before {
+        content: "Before ";
+      }
+
+      /* this will select the first letter of the specified element which is p element in this case */
+      p::first-letter {
+        font-size: 36px;
+      }
+
+      /* this will select the first line of the specified element which is p element in this case */
+      p::first-line {
+        color: red;
+      }
+      /*  styles the markers of list items */
+      ::marker {
+        color: red;
+        font-size: 24px;
+      }
+
+      /*  selects a part of element in the HTML document selected by user using the mouse cursor*/
+      ::selection {
+        background-color: yellow;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">Content</div>
+    <p>
+      While topped flatbreads were consumed in ancient Egypt and Rome, Italians
+      are credited as the people who invented pizza first. During the 1700s and
+      1800s, Naples was a bustling waterfront city especially near the shore,
+      where overcrowding and primarily outdoor living forced locals to find
+      quick, easy ways to feed their families. Pizza became a common dish
+      because of its limited ingredients and handy portability, but it was
+      considered a street food for the poor, unsuitable for the upper class.
+      Little did they know how this seemingly simple creation would turn into a
+      global phenomenon.
+    </p>
+    <div class="container">Hello</div>
+    <ul>
+      <li>Phone</li>
+      <li>PC</li>
+      <li>TV</li>
+    </ul>
+  </body>
+</html>
+
+
+<!-- 
+Pseudo Element selectors are used to style specific parts of an element. 
+They allow you to target and style content that is not directly represented in the HTML markup.
+
+Syntax:
+selector::pseudo-element {
+    property: value;
+}
+
+They are often used to add decorative content, style the first letter or line of an element, or create custom elements.
+For example, you can use the `::before` and `::after` pseudo-elements to
+insert content before or after an element's content, respectively.
+
+::after is used to insert content after the content of an element.
+::before is used to insert content before the content of an element.
+::first-letter is used to style the first letter of an element.
+::first-line is used to style the first line of an element.
+::marker is used to style the marker of a list item.
+::selection is used to style the portion of an element that is selected by the user.
+::backdrop is used to style the backdrop of an element, such as a modal or dialog.
+::placeholder is used to style the placeholder text of an input or textarea element.
+::cue is used to style the cue text of a media element, such as a video or audio player.
+::spelling-error is used to style text that has been marked as a spelling error by the browser's spell checker.
+-->

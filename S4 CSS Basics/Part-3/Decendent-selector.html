@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <section>
+            <p>This is a paragraph inside a section.</p>
+            <p>This is another paragraph inside a section.</p>
+        </section>
+    </div>
+
+    <section>
+        <p>This is a paragraph inside another section outside div.</p>
+    </section>
+    
+    <div>
+        <p>This is a paragraph inside another div.</p>
+        <p>This is another paragraph inside another div.</p>
+    </div>
+</body>
+</html>
+
+<!-- 
+In this File, we are using a descendant selector to style all the <p> elements that are descendants of <div> elements. 
+The CSS rule "div p { color: red; }" will apply the red color to all <p> elements that are inside any <div> element, 
+regardless of how deeply nested they are.
+
+Decendant selectors are useful when you want to apply styles to elements that are nested within a specific parent element,
+but you don't want to limit the styling to just the immediate children.
+
+Syntax for descendant selector is: parent descendant { property: value; }
+We use a space between the parent and descendant to indicate that we are targeting all descendants of the parent element.
+
+For example, the <p> elements inside the <section> that is nested within a <div> will also be styled with red color.
+and the <p> elements inside the <section> that is outside of any <div> will not be affected by this rule and will retain 
+their default styling.
+
+This demonstrates the difference between descendant selectors and child selectors. A child selector would only target
+the immediate children of a specified element, while a descendant selector targets all descendants, regardless of their
+depth in the DOM tree.
+-->
