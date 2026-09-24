@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        /* this div element width is 248px in total */
+        margin: 50px;
+        /* width is the width of the content excluding the padding and border if you don't use box-sizing: border-box;*/
+        width: 200px;
+        /* height is the height of the content excluding the padding and border if you don't use box-sizing: border-box;*/
+        height: 100px;
+        padding: 20px;
+        border: 4px solid;
+        /* to make the div element an actual size(including the border+content+padding) of the defined width/height size, use box-sizing:border-box, note, content-box is the default box-sizing*/
+        /* box-sizing: border-box; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">I am a div element</div>
+  </body>
+</html>
+
+<!-- 
+CSS Box Model is a fundamental concept in web development that describes how the size and spacing of elements are calculated in a web page. It consists of four main components: content, padding, border, and margin.
+1. Content: This is the innermost part of the box model, where the actual content of the element (text, images, etc.) is displayed. 
+    The size of the content area can be controlled using CSS properties like width and height.
+2. Padding: This is the space between the content and the border of the element.
+    Padding can be set for all four sides of an element (top, right, bottom, left) or individually 
+    using CSS properties like padding-top, padding-right, padding-bottom, and padding-left.
+3. Border: This is the line that surrounds the padding and content of the element.
+    The border can be styled using CSS properties like border-width, border-style, and border-color.
+4. Margin: This is the space outside the border of the element, which creates space between elements.
+    The box model is important for understanding how elements are sized and spaced on a web page.
+
+This is a visual representation of the box model:
++-------------------------+
+|        Margin           |
+|  +-------------------+  |
+|  |      Border       |  |
+|  |  +-------------+  |  |
+|  |  |   Padding   |  |  |
+|  |  | +---------+ |  |  |
+|  |  | | Content | |  |  |
+|  |  | +---------+ |  |  |
+|  |  +-------------+  |  |
+|  +-------------------+  |
++-------------------------+
+The box model is a fundamental concept in web development that describes how the size and spacing of elements
+
+box-sizing: content-box is the default box-sizing, which means that the width and height of an element are 
+    calculated based on the content area only, excluding padding and border.
+box-sizing: border-box is an alternative box-sizing value that includes the padding and 
+    border in the width and height of an element. 
+    This can be useful for creating layouts that are easier to manage, 
+    as it allows you to set the size of an element without having to 
+    worry about the padding and border affecting the overall size.
+box-sizing: border-box is often used in modern web development, as it can help to simplify layout 
+    calculations and make it easier to create responsive designs. 
+    It is also the default box-sizing value in some CSS frameworks, such as Bootstrap.
+-->
+
