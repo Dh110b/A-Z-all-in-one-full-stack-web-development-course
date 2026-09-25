@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Parent{
+            font-size: 30px;
+            border: 1px solid black;
+        } /* The font size of the parent element is set to 30px */
+        .Child{
+            font-size: 2em;
+            border: 2em solid black;
+        } /* The font size of the child element is set to 2em, 
+            which means it will be twice the font size of its parent element (the Parent div in this case)
+            and 
+            the border will be 2em wide because 2em is twice the font size of the parent element
+            even if the parent's border is specified in pixels it will use font size as the reference */
+    </style>
+</head>
+<body>
+    <div class="Parent">
+        From Parent
+        <div class="Child">From Child</div>
+    </div>
+</body>
+</html>
+
+<!-- 
+EM units are a relative unit of measurement in CSS that are based on the font size of the parent element. 
+One em is equal to the current font size of the element. 
+For example, if the font size of the parent element is 16px, then 1em is equal to 16px.
+
+Syntax:
+    property: valueem; /* where value is specified in em units, e.g., 2em */
+-->

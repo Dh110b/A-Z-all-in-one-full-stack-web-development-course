@@ -1,0 +1,40 @@
+Type of Units
+
+These are the different types of units that can be used in CSS to define lengths, sizes, and other measurements.
+
+1. Absolute Units: These units are fixed and do not change based on the context or screen size. They include:
+   - px (pixels): A pixel is a unit of measurement that represents a single dot on the screen. It is commonly used 
+      for defining font sizes, margins, and padding.
+   - in (inches): An inch is a unit of measurement that is equal to 2.54 centimeters. 
+      It is often used for print media.
+   - cm (centimeters): A centimeter is a unit of measurement that is equal to 10 millimeters. 
+      It is commonly used for print media.
+   - mm (millimeters): A millimeter is a unit of measurement that is equal to 1/10th of a centimeter. 
+      It is often used for print media.
+   - pt (points): A point is a unit of measurement that is equal to 1/72nd of an inch. 
+      It is commonly used for defining font sizes in print media.
+   - pc (picas): A pica is a unit of measurement that is equal to 12 points or 1/6th of an inch. 
+      It is often used in print media.
+
+2. Relative Units: These units are relative to other measurements, such as the size of the parent element or the font size. 
+They include:
+   - em: An em is a relative unit that is based on the font size of the
+
+3. rem: A rem is a relative unit that is based on the font size of the root element (usually the <html> element). 
+It is often used for defining font sizes and spacing in a scalable way.
+   - % (percentage): A percentage is a relative unit that is based on the size of the parent element. 
+      It is commonly used for defining widths, heights, and margins.
+   - vw (viewport width): A viewport width unit is a relative unit that is based on the width of the viewport 
+      (the visible area of the web page). 1vw is equal to 1% of the viewport width.
+   - vh (viewport height): A viewport height unit is a relative unit that is based on the height of the viewport. 
+      1vh is equal to 1% of the viewport height.
+   - vmin: A vmin unit is a relative unit that is based on the smaller dimension of the viewport (either width or height). 
+      1vmin is equal to 1% of the smaller dimension.
+   - vmax: A vmax unit is a relative unit that is based on the larger dimension of the viewport. 
+      1vmax is equal to 1% of the larger dimension.
+
+4. Other Units: There are also other units that can be used in CSS, such as:
+   - ch: A ch unit is a relative unit that is based on the width of the "0" (zero) character in the current font. 
+      It is often used for defining widths and spacing in a scalable way.
+   - ex: An ex unit is a relative unit that is based on the height of the lowercase "x" character in the current font. 
+      It is often used for defining heights and spacing in a scalable way.

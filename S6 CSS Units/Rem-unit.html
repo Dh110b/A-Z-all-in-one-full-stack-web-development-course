@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Parent{
+            font-size: 50px;
+            border: 1px solid black;
+        }
+        .Child{
+            font-size: 2rem;
+            border: 2rem solid black;
+        } /* The font size of the child element is set to 2rem, 
+            which means it will be twice the font size of the root element (the <html> element in this case)
+            and 
+            the border will be 2rem wide because 2rem is twice the font size of the root element
+            even if the parent's border is specified in pixels it will use root font size as the reference */
+    </style>
+</head>
+<body>
+    <div class="Parent">
+        From Parent
+        <div class="Child">From Child</div> 
+    </div>
+</body>
+</html>
+
+<!-- 
+Rem units are a relative unit of measurement in CSS that are based on the font size of the root element (usually the <html> element).
+One rem is equal to the font size of the root element.
+For example, if the font size of the root element is 16px, then 1rem is equal to 16px.
+
+Syntax:
+    property: valuerem; /* where value is specified in rem units, e.g., 2rem */
+-->
